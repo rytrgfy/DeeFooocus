@@ -191,7 +191,7 @@ function uiElementIsVisible(el) {
     const computedStyle = getComputedStyle(el);
     const isVisible = computedStyle.display !== 'none';
 
-    if (!isVisible) return false;
+    if (!visible) return false;
     return uiElementIsVisible(el.parentNode);
 }
 
